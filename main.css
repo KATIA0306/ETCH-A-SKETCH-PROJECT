@@ -1,0 +1,19 @@
+#parent {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.row {
+  height: 27px;
+}
+
+.elem {
+  width: 25px;
+  height: 25px;
+  border: 1px solid blue;
+  display: inline-block;
+}
