@@ -1,21 +1,19 @@
 
-for (let i = 0; i < 20; i++) {
-  let row = createRow();
-  for (let k = 0; k < 20; k++) {
-    createElement(row);
-  };
-};
 
-function createRow() {
-  let parent = document.getElementById('parent');
-  let row = document.createElement('div');
-  row.className = "row";
-  parent.appendChild(row);
-  return row;
+let rowsNumber = 16;
+
+
+const createGrid = (rowsNumber) => {
+ for (let i = 0; i < rowsNumber; i++) {
+   for (let j = 0; j < rowsNumber; j++) {
+
+     let parent = document.getElementById('parent');
+     let grid = document.createElement('div');
+     grid.className = "grid";
+     grid.setAttribute('style', 'width: ' + (100/rowsNumber) + '%; height: ' + (100/rowsNumber) + '%');
+     parent.appendChild(grid);
+   }
+ }
 }
 
-function createElement(parent) {
-  let elem = document.createElement('div');
-  elem.className = "elem";
-  parent.appendChild(elem);
-}
+createGrid(16);
