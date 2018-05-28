@@ -3,20 +3,38 @@
 #parent {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 50px;
+  margin-bottom: 200px;
   text-align: center;
   height: 700px;
   width: 700px;
   box-sizing: border-box;
+  border: 5px dotted mediumvioletred;
 }
 
 .grid {
-  border: 1px solid white;
-  background-color: blue;
+  border: none;
+  background-color: white;
   float: left;
   box-sizing: border-box;
 }
 
-#color {
-  color: red;
+#reset {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-top: 70px;
+  font-size: 20px;
+  align: center;
+}
+
+#random-color {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-top: 70px;
+  font-size: 20px;
+  align: center;
 }
